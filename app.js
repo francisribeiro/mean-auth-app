@@ -44,6 +44,6 @@ app.get('/', (req, res) => {
 
 // Start Server
 app.listen(port, (err) => {
-    if (err) console.error(err);
+    if (err) throw err;
     console.log(`Server listening on port ${port}`);
 });
